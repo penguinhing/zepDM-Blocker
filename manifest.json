@@ -1,0 +1,29 @@
+{
+  "name": "Zepus DM 차단기",
+  "description": "Zep DM 차단기",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  
+   "content_scripts": [
+    {
+      "matches": ["https://zep.us/**"],
+      "js": ["content.js"]
+    }
+  ],
+  
+  
+  
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
